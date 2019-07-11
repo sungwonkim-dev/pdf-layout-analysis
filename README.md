@@ -7,7 +7,8 @@ pdf-layout-analysis
         * 문서 레이아웃을 분류하고 식별하는 과정
     * document
         * text와 image 또는 chart로 이루어진 파일
-            * 주로 pdf 
+            * 주로 pdf
+            * 필요시 word, hwp -> pdf 변환 프로그램 개발 
 # 1. 목적
     * text의 청각화 또는 OCR (Optical character recognition)에 활용하기 위한 모델 개발 
 # 2. 요구 사항
