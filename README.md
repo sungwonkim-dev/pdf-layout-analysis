@@ -5,8 +5,9 @@ pdf-layout-analysis
     * layout -analysis 
         * In computer vision, document layout analysis is the process of identifying and categorizing the regions of interest in the scanned image of a text document.
         * 문서 레이아웃을 분류하고 식별하는 과정
-    * docuemnt
-        * text로 이루어진 파일
+    * document
+        * text와 image 또는 chart로 이루어진 파일
+            * 주로 pdf 
 # 1. 목적
     * text의 청각화 또는 OCR (Optical character recognition)에 활용하기 위한 모델 개발 
 # 2. 요구 사항
