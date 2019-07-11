@@ -22,14 +22,14 @@ pdf-layout-analysis
         * background separation
     * document layout point calculation
     * reading order for document calculation
-# 2. 운영 환경
+# 3. 운영 환경
     * OS  : Microsoft Windows 버전 1803 (OS 빌드 : 17134.829)
     * CPU : intel i5-8250U CPU @  1.60GHz
     * RAM : 4 GB
-# 3. 개발 환경
+# 4. 개발 환경
     *  운영 환경과 동일
-# 4. 사용 언어
+# 5. 사용 언어
     * python
         * Python 3.7.3
-# 5. 프로세스
+# 6. 프로세스
 ![WorkProcess](image/WorkProcess.PNG)
