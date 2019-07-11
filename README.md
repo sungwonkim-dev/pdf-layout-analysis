@@ -1,6 +1,5 @@
 pdf-layout-analysis
 ==========================
-'pdf-layout-analysis' is a temporary title.
 
 # 0. 언어 정의
     * layout -analysis 
