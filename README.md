@@ -33,3 +33,8 @@ pdf-layout-analysis
         * Python 3.7.3
 # 6. 프로세스
 ![WorkProcess](image/WorkProcess.PNG)
+
+# 7. 진행 상황
+| step| 내용| 날짜 | 결과 |
+|:---:|:---:|:---:| :---:|
+| 1 | Make block of contents | 2019.07.15 | ![BlockContents](image/BlockContents.PNG)|
