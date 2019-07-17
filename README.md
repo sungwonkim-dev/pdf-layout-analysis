@@ -32,9 +32,23 @@ pdf-layout-analysis
     * python
         * Python 3.7.3
 # 6. 프로세스
-![WorkProcess](image/WorkProcess.PNG)
+![WorkProcess](image/result/WorkProcess.PNG)
 
 # 7. 진행 상황
 | step| 내용| 날짜 | 결과 |
 |:---:|:---:|:---:| :---:|
-| 1 | Make block of contents | 2019.07.15 | ![BlockContents](image/BlockContents.PNG)|
+| 1 | Make block of contents | 2019.07.15 | ![BlockContents](image/result/BlockContents.PNG)|
+| 2 | Valid block detection based on dilate repetition rate  | 2019.07.17 | <pre><code> dilate repetition rate<br>1 : 이미지와 캡션 분리 가능<br>2 : 이미지와 캡션 분리 불가능</code><pre>|
+| 2 | Valid block detection based on consecutive pixel position checker value change of RLSA  | 2019.07.17 | <pre><code>consecutive pixel position checker value :<br>value와 contents block의 size는 정비례, <br> 일정 range를 벗어나면 image와 text를 구분하는 <br> contents block 생성 불가능 4어절 이상, 문단에 적합 </code><pre>|
+## Valid block detection based on parameter change of RLSA and dilate repetition rate
+| 순서 | consecutive pixel position checker value  | dilate repetition rate | text 최소 크기| text 평균 | text 최대 크기 | 이미지 |
+|:---:|:---:|:---:| :---:|:---:|:---:| :---:|
+| 1 | 1 | 1 |  ![min](image/performance/crop/1x1/min.jpg)  | ![mean](image/performance/crop/1x1/mean.jpg)| ![max](image/performance/crop/1x1/max.jpg)| ![mean](image/performance/crop/1x1/image.jpg)|
+| 2 | 1 | 2 |  ![min](image/performance/crop/1x2/min.jpg)  | ![mean](image/performance/crop/1x2/mean.jpg)| ![max](image/performance/crop/1x2/max.jpg)| ![mean](image/performance/crop/1x2/image.jpg)|
+| 3 | 5 | 1 |  ![min](image/performance/crop/5x1/min.jpg)  | ![mean](image/performance/crop/5x1/mean.jpg)| ![max](image/performance/crop/5x1/max.jpg)| ![mean](image/performance/crop/5x1/image.jpg)|
+| 4 | 5 | 2 |  ![min](image/performance/crop/5x2/min.jpg)  | ![mean](image/performance/crop/5x2/mean.jpg)| ![max](image/performance/crop/5x2/max.jpg)| ![mean](image/performance/crop/5x2/image.jpg)|
+| 5 | 10 | 1 | ![min](image/performance/crop/10x1/min.jpg)  | ![mean](image/performance/crop/10x1/mean.jpg)| ![max](image/performance/crop/10x1/max.jpg)| ![mean](image/performance/crop/10x1/image.jpg)|
+| 6 | 10 | 2 | ![min](image/performance/crop/10x2/min.jpg)  | ![mean](image/performance/crop/10x2/mean.jpg)| ![max](image/performance/crop/10x2/max.jpg)| ![mean](image/performance/crop/10x2/image.jpg)|
+| 7 | 20| 1 |  ![min](image/performance/crop/20x1/min.jpg)  | ![mean](image/performance/crop/20x1/mean.jpg)| ![max](image/performance/crop/20x1/max.jpg)| ![mean](image/performance/crop/20x1/image.jpg)|
+| 8 | 40 | 1 | ![min](image/performance/crop/40x1/min.jpg)  | ![mean](image/performance/crop/40x1/mean.jpg)| ![max](image/performance/crop/40x1/max.jpg)| ![mean](image/performance/crop/40x1/image.jpg)|
+| 9 | 100 | 1 |![min](image/performance/crop/100x1/min.jpg)  | ![mean](image/performance/crop/100x1/mean.jpg)| ![max](image/performance/crop/100x1/max.jpg)| ![mean](image/performance/crop/100x1/image.jpg)|
